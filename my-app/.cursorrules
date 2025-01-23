@@ -1,0 +1,93 @@
+{
+  "rules": [
+    {
+      "pattern": "app/**/*.{ts,tsx}",
+      "context": {
+        "type": "Next.js App Router Pages",
+        "description": "Next.js 14 app directory pages and layouts using TypeScript"
+      }
+    },
+    {
+      "pattern": "app/layout.tsx",
+      "context": {
+        "type": "Root Layout",
+        "description": "Root layout component with theme provider and global styles"
+      }
+    },
+    {
+      "pattern": "app/globals.css",
+      "context": {
+        "type": "Global Styles",
+        "description": "Global CSS with Tailwind directives and CSS variables"
+      }
+    },
+    {
+      "pattern": "components/ui/**/*.tsx",
+      "context": {
+        "type": "Shadcn UI Components",
+        "description": "Reusable UI components from Shadcn UI library"
+      }
+    },
+    {
+      "pattern": "components/**/*.tsx",
+      "exclude": "components/ui/**",
+      "context": {
+        "type": "Custom Components",
+        "description": "Custom React components using TypeScript"
+      }
+    },
+    {
+      "pattern": "lib/**/*.ts",
+      "context": {
+        "type": "Utility Functions",
+        "description": "TypeScript utility functions and helpers"
+      }
+    },
+    {
+      "pattern": "hooks/**/*.ts",
+      "context": {
+        "type": "React Hooks",
+        "description": "Custom React hooks using TypeScript"
+      }
+    },
+    {
+      "pattern": "tailwind.config.ts",
+      "context": {
+        "type": "Tailwind Config",
+        "description": "Tailwind CSS configuration with custom theme settings"
+      }
+    },
+    {
+      "pattern": "next.config.mjs",
+      "context": {
+        "type": "Next.js Config",
+        "description": "Next.js configuration with module transpilation settings"
+      }
+    },
+    {
+      "pattern": "components.json",
+      "context": {
+        "type": "Shadcn Config",
+        "description": "Shadcn UI configuration and component settings"
+      }
+    },
+    {
+      "pattern": "public/**/*",
+      "context": {
+        "type": "Static Assets",
+        "description": "Public static files and assets"
+      }
+    },
+    {
+      "pattern": "types/**/*.ts",
+      "context": {
+        "type": "Type Definitions",
+        "description": "TypeScript type definitions and interfaces"
+      }
+    }
+  ],
+  "defaultContext": {
+    "type": "Next.js TypeScript Project",
+    "description": "Modern Next.js 14 web application with TypeScript, Shadcn UI, Tailwind CSS and Lucid Icons"
+  }
+} 
